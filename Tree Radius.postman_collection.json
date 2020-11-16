@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "9d74aa7b-954d-4575-b4e0-0217d77b5442",
+		"name": "Tree Radius",
+		"description": "To Test Tree Radius test given by Holidu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Positive scanario-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/services/v1/trees/search/100000/200000/500000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"services",
+						"v1",
+						"trees",
+						"search",
+						"100000",
+						"200000",
+						"500000"
+					]
+				},
+				"description": "To test postitive test case."
+			},
+			"response": []
+		},
+		{
+			"name": "All the parameters are Zero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/services/v1/trees/search/0/0/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"services",
+						"v1",
+						"trees",
+						"search",
+						"0",
+						"0",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Positive scanario -2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/services/v1/trees/search/0/0/300000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"services",
+						"v1",
+						"trees",
+						"search",
+						"0",
+						"0",
+						"300000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "positive scanario-3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/services/v1/trees/search/0/0/325000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"services",
+						"v1",
+						"trees",
+						"search",
+						"0",
+						"0",
+						"325000"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
